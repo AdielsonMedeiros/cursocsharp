@@ -1,0 +1,7 @@
+{
+  "dotnet.defaultSolution": "teste.sln",
+  "csharp.debug.console": "externalTerminal",
+  "csharp-dev-tools.roslyn.projectOrSolutionFiles": [
+    "c:\\Users\\Adielson Medeiros\\Desktop\\Web\\curso\\teste.sln"
+  ]
+}
