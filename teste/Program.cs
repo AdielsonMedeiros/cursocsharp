@@ -1,7 +1,6 @@
 // 'using System;' permite usar classes fundamentais do C#, como a 'Console'.
 using System;
 
-// 'namespace' é usado para organizar o código em pastas lógicas e evitar conflitos de nomes.
 namespace _01Conceitos
 {
     // 'class Program' define uma classe, que é uma estrutura que contém o código.
@@ -13,7 +12,12 @@ namespace _01Conceitos
         {
             // 'Console.WriteLine' escreve uma linha de texto na tela do computador.
             // "Hello, World!" é a mensagem que será exibida.
-            Console.WriteLine("Hello, World!");
+            
+            Pessoa p1 = new Pessoa();
+            p1.nome = "Adielson";
+            p1.idade = 25;
+            p1.mensagem();
+            
         }
     }
 }

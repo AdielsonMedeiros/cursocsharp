@@ -12,3 +12,4 @@ C:\Users\Adielson Medeiros\Desktop\Web\curso\teste\obj\Debug\net10.0\refint\test
 C:\Users\Adielson Medeiros\Desktop\Web\curso\teste\obj\Debug\net10.0\teste.pdb
 C:\Users\Adielson Medeiros\Desktop\Web\curso\teste\obj\Debug\net10.0\teste.genruntimeconfig.cache
 C:\Users\Adielson Medeiros\Desktop\Web\curso\teste\obj\Debug\net10.0\ref\teste.dll
+C:\Users\Adielson Medeiros\Desktop\Web\curso\teste\obj\Debug\net10.0\teste.sourcelink.json
