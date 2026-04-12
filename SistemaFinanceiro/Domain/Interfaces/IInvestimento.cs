@@ -2,17 +2,16 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Domain.Interfaces;
+using Domain.Models;
 
-namespace Domain
+namespace Domain.Interfaces
 {
     public interface IInvestimento
     {
-        public decimal CalcularRendimento()
-        {
-            return 0;
-        }
+        decimal CalcularRendimento();
 
 
-    
+
     }
 }

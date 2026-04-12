@@ -2,20 +2,28 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Domain.Interfaces;
+using Domain.Models;
 
-namespace Domain
+namespace Domain.Models
 {
-    public class AtivoBase
+    public abstract class AtivoBase : IInvestimento
     {
-        public string Nome;
-        public decimal ValorInvestido;
-        DateTime DataCompra;
+        public string Nome { get; set; }
+        public decimal ValorInvestido { get; set; }
+        public DateTime DataCompra { get; set; }
 
 
-        public void AtivoBase(string nome, decimal valor, DateTime data)
+        protected AtivoBase(string nome, decimal valorInvestido, DateTime dataCompra)
         {
             
+            Nome = nome;
+            ValorInvestido = valorInvestido;
+            DataCompra = dataCompra;
+
         }
+
+        public abstract decimal CalcularRendimento();
         
     }
 }
