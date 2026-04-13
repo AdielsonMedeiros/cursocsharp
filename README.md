@@ -7,7 +7,7 @@ Este repositório contém a organização de exercícios, métodos e desafios re
 O projeto está organizado em subdiretórios categorizados por tipo de atividade:
 
 ### Desafios Concluídos
-Nesta seção estão os projetos que exigiram a aplicação de múltiplos conceitos para resolver problemas específicos:
+Nesta seção estão os projetos que exigiram a aplicação de múltiplos conceitos para resolver problemas específicos (localizados na pasta `Desafios/`):
 
 *   **CalculoRota**: Sistema para cálculo de rotas, consumo de combustível e custos de viagem.
 *   **Exames**: Sistema para processamento e validação de exames laboratoriais (Glicemia, Colesterol, Triglicerídeos).
