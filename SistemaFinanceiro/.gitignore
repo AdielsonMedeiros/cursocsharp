@@ -1,0 +1,23 @@
+# .NET Core / .NET 5+
+bin/
+obj/
+out/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio Code
+.vscode/
+.history/
+*.log
+
+# User-specific files
+*.user
+*.userosscache
+*.sln.docuser
+
+# JetBrains Rider
+.idea/
+
+# Windows
+Thumbs.db
+Desktop.ini
