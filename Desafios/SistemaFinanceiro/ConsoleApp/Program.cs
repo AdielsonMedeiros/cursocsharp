@@ -1,7 +1,6 @@
 using Domain;
 using Domain.Models;
 
-
 var carteira = new Carteira();
 
 var petrobras = new Acao("Petrobras", 5000, DateTime.Now, "PETR4", 5500);
@@ -19,3 +18,4 @@ foreach (var ativo in carteira.Ativos)
 Console.WriteLine("---------------------------------------");
 Console.WriteLine($"Saldo Total: {carteira.CalcularSaldoTotal() + carteira.CalcularLucroTotal():C2}");
 Console.WriteLine($"Lucro Total: {carteira.CalcularLucroTotal():C2}");
+
