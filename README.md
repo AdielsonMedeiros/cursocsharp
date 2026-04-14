@@ -1,4 +1,4 @@
-# Curso de C# - Repositório de Estudos
+ Repositório de Estudos
 
 Este repositório contém a organização de exercícios, métodos e desafios realizados durante o aprendizado da linguagem C# e plataforma .NET.
 
