@@ -7,8 +7,9 @@ namespace Infrastructure.Repositories;
 
 public class VeiculoRepository : IVeiculoRepository
 {
-    public async Task Salvar(Veiculo veiculo)
+    public Task Salvar(Veiculo veiculo)
     {
         Console.WriteLine($"Veiculo {veiculo.Placa} , salvo com sucesso");
+        return Task.CompletedTask;
     }
 }

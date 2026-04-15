@@ -21,29 +21,24 @@ namespace exame
             
         }
 
-        public override string classificarResultado()
+public override string classificarResultado()
         {
             if ( getIdade() <= 9 && qntDeTriglicerideos < 75)
             {
                 return "BOM";
-            } else if (getIdade() >= 10 && qntDeTriglicerideos <= 19 && qntDeTriglicerideos < 90)
+            }
+            else if (getIdade() >= 10 && qntDeTriglicerideos <= 19 && qntDeTriglicerideos < 90)
             {
                 return "BOM";
-            } else if (getIdade() > 19 && getqntDeTriglicerideos() < 150)
+            }
+            else if (getIdade() > 19 && getqntDeTriglicerideos() < 150)
             {
                 return "BOM";
-            } else
+            }
+            else
             {
                 return "RUIM";
             }
-
-
-            
-            return resultado();
-
-
-            
-           
         }
     }
 }

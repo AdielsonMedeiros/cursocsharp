@@ -34,7 +34,7 @@ namespace exame
         }
 
         
-        public override string classificarResultado()
+public override string classificarResultado()
         {
             if(getIdade() <= 19 && hdl > 45)
             {
@@ -43,10 +43,12 @@ namespace exame
             else if(getIdade() <= 19 && hdl > 40)
             {
                 return "HDL = 1";
-            } else
+            }
+            else if(getIdade() <= 19)
             {
                 return "HDL = RUIM";
             }
+
             if(risco == 'B' && ldl < 100)
             {
                 return "LDL = 0";
@@ -58,15 +60,11 @@ namespace exame
             else if(risco == 'A' && ldl >= 150 && ldl < 50)
             {
                 return "LDL BOM";
-            }else
+            }
+            else
             {
                 return "LDL RUIM";
             }
-            
-
-
-
-        
         }
     }
 }
