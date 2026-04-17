@@ -17,7 +17,7 @@ public class EstoqueManager(IProdutoRepository repository) : IEstoqueService
         if (produto == null) throw new KeyNotFoundException("Produto não encontrado");
 
         produto.AjustarEstoque(quantidade);
-        await repository.AtualizarEstoque(produtoId, quantidade);
+        await repository.Atualizar(produtoId, quantidade);
 
         
     }

@@ -8,7 +8,7 @@ namespace Adapters.Driven;
 public class EstoqueDbContext: DbContext
 
 {
-    public DbSet<Produto> Produtos { get; set; }
+    public DbSet<Produto> Produtos => Set<Produto>();
 
     protected override void OnConfiguring(DbContextOptionsBuilder options) => options.UseSqlite("Data Source=estoque.db");
 

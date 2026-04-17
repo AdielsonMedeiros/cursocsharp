@@ -7,7 +7,7 @@ namespace Core.Ports.Outgoing;
 public interface IProdutoRepository
 {
     Task<Produto?> ObterPorId(int id);
-    Task AtualizarEstoque(int id, int quantidade);
+    Task Atualizar(int id, int quantidade);
 }
 
 
