@@ -3,39 +3,15 @@ using Viagem.Domain.Entities;
 
 namespace Viagem.Application.Services;
 
-
-
-
-
-public class ProcessarReembolsoService
+public class ProcessarReembolsoService(IReembolsoRepository repository)
 {
-    private readonly IReembolsoRepository _repository;
+    private readonly IReembolsoRepository _repository = repository;
 
-    
-    
-    
-    
-    
-    public ProcessarReembolsoService(IReembolsoRepository repository)
-    {
-        _repository = repository;
-    }
-
-    
-    
-    
-    
-    
-    
-    
-    
     public async Task Executar(decimal valorTotal, string clienteNome, string descricao)
     {
-        
         if (valorTotal > 1000)
             throw new Exception("Reembolso de alto valor necessita aprovação manual do diretor");
 
-        
         var viagem = new SolicitacaoReembolso
         {
             ValorTotal = valorTotal,
@@ -43,15 +19,11 @@ public class ProcessarReembolsoService
             Descricao = descricao
         };
 
-        
         await _repository.SalvarSolicitacao(viagem);
+        
         Console.WriteLine($"Reembolso de {valorTotal} para {viagem.ClienteNome} aprovado e salvo para {viagem.Descricao}");
     }
 
-    
-    
-    
-    
     public async Task<IEnumerable<SolicitacaoReembolso>> ListarTodos()
     {
         return await _repository.ObterTodos();
